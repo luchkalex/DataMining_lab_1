@@ -1,0 +1,7 @@
+from services import *
+from constants import *
+
+build_plot_distribution_of_length(HAM_MESSAGES_OUTPUT_FILENAME, HAM_MESSAGES_LENGTH_PLOT_FILENAME)
+build_plot_distribution_of_length(SPAM_MESSAGES_OUTPUT_FILENAME, SPAM_MESSAGES_LENGTH_PLOT_FILENAME)
+build_plot_distribution_of_length(HAM_WORDS_OUTPUT_FILENAME, HAM_WORDS_LENGTH_PLOT_FILENAME)
+build_plot_distribution_of_length(SPAM_WORDS_OUTPUT_FILENAME, SPAM_WORDS_LENGTH_PLOT_FILENAME)
