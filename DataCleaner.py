@@ -10,7 +10,6 @@ message_list = get_list_of_lines_from_string(edited_str)
 categorize_messages_to_file(message_list, HAM_MESSAGES_OUTPUT_FILENAME, SPAM_MESSAGES_OUTPUT_FILENAME)
 
 edited_str = delete_stop_words(STOP_WORDS_SOURCE_FILENAME, edited_str)
-edited_str = delete_stop_words(STOP_WORDS_SOURCE_FILENAME, edited_str)
 
 message_list = get_list_of_lines_from_string(edited_str)
 

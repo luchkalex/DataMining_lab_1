@@ -16,6 +16,9 @@ SPAM_WORDS_LENGTH_PLOT_FILENAME = "spam_words_plot.png"
 HAM_MESSAGES_LENGTH_PLOT_FILENAME = "ham_messages_plot.png"
 SPAM_MESSAGES_LENGTH_PLOT_FILENAME = "spam_messages_plot.png"
 
+MOST_FREQUENT_HAM_WORDS_PLOT_FILENAME = "most_frequent_ham_words_plot.png"
+MOST_FREQUENT_SPAM_WORDS_PLOT_FILENAME = "most_frequent_spam_words_plot.png"
+
 OUTPUT_DIR = "output"
 SOURCE_DIR = "source_files"
 

@@ -47,7 +47,7 @@ def build_plot_distribution_of_length(src_filename, output_filename):
             stat[stat.index(src_string)].quantity += 1
             already_in_list = False
 
-    stat.sort(key=lambda x: x.length, reverse=False)
+    stat.sort(key=lambda x: int(x.length), reverse=False)
 
     for line in stat:
         stat_length.append(line.length)
@@ -62,10 +62,11 @@ def build_plot_distribution_of_length(src_filename, output_filename):
     average_sum = round(average_sum/sum(stat_quantity))
 
     plt.plot(stat_length, stat_quantity)
-    plt.title("Distribution of word length")
-    plt.xlabel("Word length\nAverage length: " + str(average_sum))
+    plt.grid()
+    plt.title("Length distribution")
+    plt.xlabel("Length\nAverage length: " + str(average_sum))
     plt.ylabel("Quantity")
-    plt.savefig(OUTPUT_DIR + "/" + sub("^\\w+/|\\.\\w*", "", output_filename))
+    plt.savefig(OUTPUT_DIR + "/" + output_filename)
     plt.show()
 
 
@@ -80,17 +81,18 @@ def cleanup_text(source):
 
 
 def delete_stop_words(sw_filename, src_string):
+    for x in range(2):
+        # Deleting stop words from source_files
+        stop_words_file = open(SOURCE_DIR + "/" + sw_filename, "r")
 
-    # Deleting stop words from source_files
-    stop_words_file = open(SOURCE_DIR + "/" + sw_filename, "r")
+        # Fill list of words
+        stop_words_list = get_list_of_lines_from_file(stop_words_file)
 
-    # Fill list of words
-    stop_words_list = get_list_of_lines_from_file(stop_words_file)
+        # Delete from source_files
+        for line in stop_words_list:
+            src_string = sub("( " + line + " )|(\n" + line + " )|( " + line + "\n)", " ", src_string)
+            src_string = sub("(," + line + " )", ",", src_string)
 
-    # Delete from source_files
-    for line in stop_words_list:
-        src_string = sub("( " + line + " )|(\n" + line + " )|( " + line + "\n)", " ", src_string)
-        src_string = sub("(," + line + " )", ",", src_string)
     return src_string
 
 
@@ -163,3 +165,33 @@ def categorize_words_of_messages_to_file(msg_list, ham_filename, spam_filename):
 
     for item in spam_stat:
         spam_file.write(item.word + "\n")
+
+
+def build_plot_most_frequent_words(src_filename, plot_filename):
+    # put into list of WordCount objects from words file
+    # sort list by word frequency
+    # take first 20 words
+    # put into lists of length and frequency
+    # build plot
+    src_file = open(OUTPUT_DIR + "/" + src_filename, "r")
+    word_count_list = []
+    most_frequent_words_lengths = []
+    most_frequent_words_counts = []
+
+    for line in src_file:
+        word_count_list.append(WordCount(sub(":.*\n", "", line), sub("\\D*", "", line)))
+
+    word_count_list.sort(key=lambda x: int(x.count), reverse=True)
+
+    for x in range(20):
+        most_frequent_words_lengths.append(word_count_list[x].word)
+        most_frequent_words_counts.append(word_count_list[x].count)
+
+    plt.plot(most_frequent_words_lengths, most_frequent_words_counts, "bo-")
+    plt.grid()
+    plt.xticks(rotation='vertical')
+    plt.title("Most frequent words")
+    plt.xlabel("Word")
+    plt.ylabel("Quantity")
+    plt.savefig(OUTPUT_DIR + "/" + plot_filename)
+    plt.show()
