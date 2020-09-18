@@ -134,7 +134,7 @@ def build_plot_distribution_of_lengths(src_filename, output_filename):
     # Splitting the list in two (lengths and quantities) to build plot
     for item in quantity_lengths_list:
         lengths_list.append(item.length)
-        quantities_list.append(item.quantity)
+        quantities_list.append(item.quantity / len(src_list))
 
     # Calc average length
     for i in range(0, len(lengths_list)):

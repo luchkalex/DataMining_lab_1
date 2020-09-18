@@ -1,5 +1,6 @@
 from services import *
-from constants import *
+from text_processing import *
+from word_stat import *
 
 src_file = open(SOURCE_DIR + "/" + MAIN_SOURCE_FILENAME, "r")
 

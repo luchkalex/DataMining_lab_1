@@ -1,5 +1,4 @@
-from services import *
-from constants import *
+from word_stat import *
 
 # Build plot of ham messages length distribution
 build_plot_distribution_of_lengths(

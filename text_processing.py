@@ -16,9 +16,10 @@ def cleanup_text(source):
 
 # Deleting stop words from external file
 def delete_stop_words(sw_filename, src_string):
-    for x in range(2):
-        stop_words_file = open(SOURCE_DIR + "/" + sw_filename, "r")
 
+    stop_words_file = open(SOURCE_DIR + "/" + sw_filename, "r")
+
+    for x in range(2):
         stop_words_list = get_list_of_lines_from_file(stop_words_file)
 
         for line in stop_words_list:

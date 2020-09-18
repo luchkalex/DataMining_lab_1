@@ -10,6 +10,7 @@ tkts: 4
 st: 31
 may: 7
 text: 146
+to: 17
 receiv: 37
 question: 13
 std: 11
@@ -1623,6 +1624,7 @@ item: 1
 cfca: 1
 wine: 1
 wot: 1
+do: 1
 cock: 1
 man: 2
 wife: 1

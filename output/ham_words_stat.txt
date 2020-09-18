@@ -164,6 +164,7 @@ still: 150
 clear: 10
 sure: 77
 sarcast: 2
+that: 53
 x: 47
 doesn: 19
 us: 58
@@ -212,7 +213,7 @@ weekend: 27
 abiola: 11
 forget: 18
 need: 179
-you: 32
+you: 41
 crave: 12
 sweet: 38
 arabian: 1
@@ -267,7 +268,7 @@ realiz: 6
 embarass: 5
 accomod: 2
 thought: 48
-it: 23
+it: 24
 sinc: 25
 best: 42
 seem: 16
@@ -333,7 +334,6 @@ xx: 14
 perform: 3
 machan: 4
 free: 60
-that: 52
 cool: 41
 gentleman: 3
 digniti: 3
@@ -1254,7 +1254,7 @@ jen: 4
 blimey: 1
 exercis: 1
 kinda: 8
-is: 5
+is: 7
 concentr: 5
 hank: 1
 lotsli: 1
@@ -1284,6 +1284,7 @@ differ: 15
 waver: 1
 decis: 6
 cope: 2
+same: 2
 individu: 2
 heal: 1
 railway: 3
@@ -1525,6 +1526,7 @@ tendenc: 1
 headach: 3
 jazz: 5
 yogasana: 5
+can: 5
 em: 9
 meiv: 1
 gotani: 1
@@ -1687,6 +1689,7 @@ dehydr: 2
 fluid: 1
 weird: 4
 idea: 11
+so: 4
 away: 21
 trek: 1
 harri: 1
@@ -1927,7 +1930,7 @@ curfew: 1
 gibe: 1
 midnight: 6
 getsleep: 1
-and: 2
+and: 3
 studdi: 1
 massag: 2
 oil: 2
@@ -2104,7 +2107,7 @@ beth: 1
 aunt: 4
 charli: 1
 helen: 2
-do: 6
+do: 9
 heard: 9
 syllabus: 1
 poyyarikaturkolathupalayamunjalur: 1
@@ -2242,6 +2245,7 @@ complex: 1
 freeli: 1
 tax: 1
 outrag: 1
+all: 3
 tomorro: 2
 ryder: 1
 fret: 2
@@ -2317,6 +2321,7 @@ popcorn: 1
 moan: 5
 thin: 1
 fed: 1
+of: 2
 himso: 1
 neft: 2
 refer: 5
@@ -2334,7 +2339,7 @@ wuldnt: 1
 mite: 5
 creepi: 2
 lunchtim: 1
-i: 2
+i: 3
 organis: 1
 passabl: 1
 phd: 1
@@ -2406,6 +2411,7 @@ plumbingremix: 1
 evil: 1
 acid: 1
 didntgiv: 1
+a: 2
 bellearli: 1
 bedbut: 1
 thepub: 1
@@ -2527,6 +2533,7 @@ whn: 2
 arrest: 5
 suntec: 3
 steamboat: 1
+where: 3
 moji: 4
 forgiv: 2
 yahoo: 6
@@ -2615,7 +2622,7 @@ intrepid: 1
 duo: 1
 missin: 3
 guilti: 3
-about: 1
+about: 2
 aiya: 4
 cardiff: 3
 fact: 10
@@ -3555,6 +3562,7 @@ pressur: 1
 limit: 5
 dumb: 2
 thangamfeel: 1
+veri: 3
 okey: 3
 doke: 1
 dress: 5
@@ -3674,7 +3682,6 @@ yunni: 2
 citylink: 1
 er: 6
 prop: 1
-so: 2
 pleasant: 1
 statement: 2
 bognor: 1
@@ -3799,7 +3806,6 @@ ittaxt: 1
 tie: 1
 pos: 1
 lool: 1
-can: 2
 shake: 2
 booti: 3
 lil: 3
@@ -3947,7 +3953,7 @@ nora: 1
 smith: 1
 gayl: 1
 crucifi: 1
-not: 6
+not: 7
 freedom: 2
 vs: 1
 cedar: 1
@@ -4083,7 +4089,6 @@ click: 2
 topic: 2
 webpag: 1
 yeesh: 1
-all: 2
 gopalettan: 1
 particip: 1
 admin: 2
@@ -4633,7 +4638,7 @@ restrict: 1
 funer: 2
 vivek: 2
 brah: 2
-at: 1
+at: 2
 greec: 1
 protect: 2
 sib: 2
@@ -4642,6 +4647,7 @@ passwordsatm: 2
 someday: 1
 goodmorninggrandfath: 1
 expir: 1
+are: 2
 yuou: 1
 spot: 1
 bunch: 1
@@ -4666,13 +4672,11 @@ smiley: 1
 gail: 1
 yaxxx: 1
 theoret: 1
-of: 1
 multimedia: 1
 hsbc: 2
 agenc: 1
 nicki: 1
 gumbi: 1
-same: 1
 tarpon: 1
 cab: 1
 step: 5
@@ -4897,6 +4901,7 @@ magazin: 1
 billi: 1
 concert: 2
 awww: 1
+he: 2
 useless: 1
 loo: 1
 ed: 1
@@ -4956,6 +4961,7 @@ sweater: 1
 mango: 1
 massiv: 2
 absolut: 3
+have: 1
 consent: 1
 mathew: 1
 tait: 1
@@ -5235,11 +5241,13 @@ infect: 2
 chastiti: 1
 devic: 1
 beat: 1
+if: 1
 gut: 1
 tallahasse: 1
 taka: 1
 wrote: 1
 ritten: 1
+was: 1
 fold: 1
 solihul: 1
 nhs: 1

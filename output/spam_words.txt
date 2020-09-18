@@ -10,6 +10,7 @@ tkts
 st
 may
 text
+to
 receiv
 question
 std
@@ -1623,6 +1624,7 @@ item
 cfca
 wine
 wot
+do
 cock
 man
 wife
