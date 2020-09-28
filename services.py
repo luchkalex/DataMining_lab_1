@@ -1,5 +1,6 @@
 from re import *
 
+from constants import OUTPUT_DIR
 from models.QuantityLength import QuantityLength
 from models.WordCount import WordCount
 
@@ -42,7 +43,8 @@ def get_quantity_length_list_from_string_list(src_list):
     return quantity_lengths_list
 
 
-def get_word_count_list_from_file(src_file):
+def get_word_count_list_from_file(src_filename):
+    src_file = open(OUTPUT_DIR + "/" + src_filename, "r")
     word_count_list = []
     # Parse file into list of WordCount
     for line in src_file:

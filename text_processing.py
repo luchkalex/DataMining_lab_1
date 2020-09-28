@@ -4,12 +4,16 @@ from services import get_list_of_lines_from_file
 from constants import SOURCE_DIR
 
 
+def cleanup_string(source):
+    return sub("am, ", "am,", sub("(\\s{2,})", " ", sub("([^a-zA-Z\\s,\n])|,,,", " ", source.lower()))) + "\n"
+
+
 # Riding of special characters, multi whitespaces and converting to lower case
 def cleanup_text(source):
     result_str = ""
 
     for line in source:
-        result_str += sub("am, ", "am,", sub("(\\s{2,})", " ", sub("([^a-zA-Z\\s,\n])|,,,", " ", line.lower()))) + "\n"
+        result_str += cleanup_string(line)
 
     return result_str
 
