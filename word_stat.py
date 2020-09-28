@@ -2,9 +2,8 @@ import matplotlib.pyplot as plt
 
 from re import *
 from constants import *
-from models.QuantityLength import QuantityLength
 from models.WordCount import WordCount
-from services import get_list_of_lines_from_file
+from services import get_list_of_lines_from_file, get_quantity_length_list_from_string_list
 from text_processing import stem_list
 
 
@@ -106,27 +105,10 @@ def build_plot_distribution_of_lengths(src_filename, output_filename):
     lengths_list = []
     quantities_list = []
 
-    # Flag that show if strings length was already found
-    already_in_list = False
-
     # To find out average length of strings
     average_length = 0
 
-    for item in src_list:
-        for quantity_length in quantity_lengths_list:
-            # If length of found string match any previous
-            # -> inc quantity of this item
-            if len(item) == quantity_length.length:
-                already_in_list = True
-                break
-        if not already_in_list:
-            quantity_lengths_list.append(QuantityLength(1, len(item)))
-            already_in_list = False
-        else:
-            # Find item of matched strings and inc
-            quantity_lengths_list[quantity_lengths_list.index(quantity_length)]\
-                .quantity += 1
-            already_in_list = False
+    quantity_lengths_list = get_quantity_length_list_from_string_list(src_list)
 
     # Sorting by length
     quantity_lengths_list.sort(key=lambda x: int(x.length), reverse=False)
