@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 from re import *
 from constants import *
 from models.WordCount import WordCount
-from services import get_list_of_lines_from_file, get_quantity_length_list_from_string_list
+from services import get_list_of_lines_from_file, get_quantity_length_list_from_string_list, \
+    get_word_count_list_from_file
 from text_processing import stem_list
 
 
@@ -138,15 +139,12 @@ def build_plot_distribution_of_lengths(src_filename, output_filename):
 # It works with a file format like "word: count". For example "the: 9"
 def build_plot_most_frequent_words(src_filename, plot_filename):
     src_file = open(OUTPUT_DIR + "/" + src_filename, "r")
-    word_count_list = []
 
     # Lists for plot building
     most_frequent_words = []
     most_frequent_words_counts = []
 
-    # Parse file into list of WordCount
-    for line in src_file:
-        word_count_list.append(WordCount(sub(":.*\n", "", line), sub("\\D*", "", line)))
+    word_count_list = get_word_count_list_from_file(src_file)
 
     # Sorting by count of words
     word_count_list.sort(key=lambda word: int(word.count), reverse=True)
